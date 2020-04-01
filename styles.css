@@ -1,3 +1,103 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F7FFF7;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bin2dec-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 16px;
+}
+
+.bin2dec-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: #FF6B6B;
+  border-radius: 8px;
+
+  width: 810px;
+  height: 400px;
+  color: #313638;
+}
+
+header h1, header h2 {
+  text-align: center;
+  /* color: #333333;  #353531 #262626 #333333 */
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header h2 {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.bin2dec-content form {
+  width: 80%;
+  max-width: 700px;
+  margin: 16px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.bin2dec-content form div:nth-child(1) {
+  grid-column: span 3;
+}
+
+.bin2dec-content form div:nth-child(3) {
+  grid-column: span 4;
+}
+
+.input-wrapper:nth-child(2) {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+}
+
+form label {
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+}
+
+form button {
+  background-color: #F7FFF7;
+  width: 150px;
+  height: 44.5px;
+  cursor: pointer;
+  color: #FF6B6B;
+  font-weight: 700;
+}
+
+form button:hover {
+  background-color: #4F95AD;
+  color: #F7FFF7;
+  border: 10px solid rgba(79, 149, 173, 0.5);
+}
+
+form input,
+form button {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 107, 107, 0.5);
+  outline: none;
+  font-size: 16px;
 }
