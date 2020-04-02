@@ -19,21 +19,23 @@
 
         <div class="input-wrapper">
           <label for="binary">Binary Input</label>
-          <input type="text" name="binary" placeholder="Enter 0 or 1">
+          <input id="binary-input" type="text" name="binary" placeholder="Enter 0 or 1">
         </div>
         
         <div class="input-wrapper">
-          <button type="submit">Convert</button>
+          <button type="submit" onclick="convertToBin(event)">Convert</button>
         </div>
 
         <div class="output-wrapper">
           <label for="decimal">Decimal Output</label>
-          <input type="text" disabled name="decimal">
+          <input id="decimal-output" type="text" disabled name="decimal">
         </div>
 
       </form>
     </div>
   </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
 

@@ -1,13 +1,11 @@
-const input = '00111100'
+let binaryInput = document.querySelector('#binary-input')
+let decimalOutput = document.querySelector('#decimal-output')
 
-let bin = parseInt(input)
-let dec = 0
+function convertToBin(e) {
+  e.preventDefault()
+  let decimalValue = parseInt(String(binaryInput.value), 2)
 
-for (let i = 0; bin > 0; i++) {
-  dec = dec + 2**i * (bin%10)
-  bin = Math.floor(bin/10)
-  console.log(i + '. >> dec: ', dec)
-  console.log(i + '. >> bin: ', bin)
+  // console.log('. >> binaryValue: ', decimalValue)
+
+  decimalOutput.value = decimalValue
 }
-
-console.log(dec)
