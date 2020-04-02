@@ -81,7 +81,7 @@ form label {
 
 form button {
   background-color: #F7FFF7;
-  width: 150px;
+  width: 100%;
   height: 44.5px;
   cursor: pointer;
   color: #FF6B6B;
@@ -91,7 +91,7 @@ form button {
 form button:hover {
   background-color: #4F95AD;
   color: #F7FFF7;
-  border: 10px solid rgba(79, 149, 173, 0.5);
+  border: 1px solid rgba(79, 149, 173, 0.5);
 }
 
 form input,
