@@ -80,7 +80,6 @@ form label {
 }
 
 form button {
-  background-color: #F7FFF7;
   width: 100%;
   height: 44.5px;
   cursor: pointer;
@@ -96,6 +95,7 @@ form button:hover {
 
 form input,
 form button {
+  background-color: #F7FFF7;
   border-radius: 8px;
   border: 1px solid rgba(255, 107, 107, 0.5);
   outline: none;
